@@ -8,6 +8,7 @@ export const initializeAnalytics = () => {
     capture_pageleave: true,
     enable_recording_console_log: true,
     enable_heatmaps: true,
+    disable_external_dependency_loading: true,
     autocapture: true
   })
 }
