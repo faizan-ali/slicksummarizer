@@ -1,0 +1,31 @@
+slickdeals-summarizer/
+├── extension/
+│   ├── package.json
+│   ├── src/
+│   │   ├── popup.tsx
+│   │   ├── content.tsx
+│   │   ├── components/
+│   │   │   ├── SummaryCard.tsx
+│   │   │   ├── SummaryButton.tsx
+│   │   │   └── LoadingSpinner.tsx
+│   │   ├── services/
+│   │   │   ├── api.ts
+│   │   │   ├── cache.ts
+│   │   │   ├── analytics.ts
+│   │   │   └── logger.ts
+│   │   └── types/
+│   │       └── index.ts
+│   └── assets/
+│       └── icon.png
+├── backend/
+│   ├── package.json
+│   ├── serverless.ts
+│   └── src/
+│       ├── handler.ts
+│       ├── services/
+│       │   ├── gpt.ts
+│       │   ├── parser.ts
+│       │   └── logger.ts
+│       └── types/
+│           └── index.ts
+└── package.json 

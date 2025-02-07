@@ -1,0 +1,37 @@
+{
+  "name": "slickdeals-summarizer-extension",
+  "displayName": "SlickSummarizer",
+  "version": "0.0.1",
+  "description": "Summarizes Slickdeals threads using AI",
+  "author": "Faizan Ali",
+  "homepage": "https://www.faizanali.com",
+  "scripts": {
+    "dev": "pnpm plasmo dev",
+    "build": "plasmo build",
+    "package": "plasmo build --zip"
+  },
+  "dependencies": {
+    "@types/react-resizable": "^3.0.7",
+    "framer-motion": "^12.1.0",
+    "markdown-to-jsx": "^7.7.3",
+    "plasmo": "^0.89.4",
+    "posthog-js": "^1.96.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@plasmohq/storage": "^1.9.0",
+    "@types/chrome": "^0.0.254",
+    "@types/node": "^22.13.1",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  },
+  "manifest": {
+    "host_permissions": ["https://slickdeals.net/f/*"],
+    "permissions": ["storage"]
+  }
+}

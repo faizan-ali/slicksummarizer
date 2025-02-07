@@ -1,0 +1,19 @@
+{
+  "name": "slickdeals-summarizer-root",
+  "private": true,
+  "scripts": {
+    "lint": "biome check ./ --fix",
+    "dev": "concurrently \"pnpm:dev:*\"",
+    "dev:extension": "cd extension && pnpm run dev",
+    "dev:backend": "cd backend && pnpm run dev",
+    "install:all": "pnpm install && cd extension && pnpm install && cd ../backend && pnpm install",
+    "build": "cd extension && pnpm run build",
+    "test": "pnpm run test:extension && pnpm run test:backend",
+    "test:extension": "cd extension && pnpm test",
+    "test:backend": "cd backend && pnpm test"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "concurrently": "^8.0.0"
+  }
+}

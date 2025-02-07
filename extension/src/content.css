@@ -1,0 +1,145 @@
+@layer plasmo-csui {
+  /* Base button styles */
+  .sd-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.2s;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sd-button--primary {
+    background: linear-gradient(135deg, #0072bc 0%, #7b4bcc 100%);
+    color: white;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 114, 188, 0.1);
+  }
+
+  .sd-button--primary:hover:not(:disabled) {
+    background: linear-gradient(135deg, #005a96 0%, #6939b0 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 114, 188, 0.2);
+  }
+
+  .sd-button--primary:active:not(:disabled) {
+    transform: translateY(0);
+  }
+
+  .sd-button--primary:disabled {
+    background: linear-gradient(135deg, #99c5e1 0%, #d4c6e4 100%);
+    cursor: not-allowed;
+  }
+
+  /* Sparkle icon animation */
+  .sd-sparkle {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    color: currentColor;
+    transform-origin: center;
+    animation: sparkle 3s ease-in-out 6;
+  }
+
+  @keyframes sparkle {
+    0%,
+    100% {
+      transform: scale(1) rotate(0deg);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.05) rotate(30deg);
+      opacity: 0.9;
+    }
+  }
+
+  /* Error message */
+  .sd-error {
+    color: #dc2626;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  /* Summary card styles */
+  .sd-card {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+  }
+
+  .sd-card__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c2c2c;
+    margin-bottom: 12px;
+  }
+
+  .sd-card__section {
+    margin-bottom: 16px;
+  }
+
+  .sd-card__section-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2c2c2c;
+    margin-bottom: 8px;
+  }
+
+  .sd-card__list {
+    list-style-type: disc;
+    list-style-position: inside;
+    color: #4a4a4a;
+    font-size: 14px;
+  }
+
+  .sd-card__list-item {
+    margin-bottom: 4px;
+  }
+
+  .sd-card__list-item--pro {
+    color: #2e7d32;
+  }
+
+  .sd-card__list-item--con {
+    color: #d32f2f;
+  }
+
+  .sd-spinner {
+    animation: spin 2s linear infinite;
+  }
+
+  .sd-spinner-star {
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+
+  .sd-spinner-sparkles {
+    animation: sparkle 2s ease-in-out infinite;
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes pulse {
+    50% {
+      opacity: 0.5;
+      stroke-width: 1.5;
+    }
+  }
+
+  @keyframes sparkle {
+    50% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+  }
+}
