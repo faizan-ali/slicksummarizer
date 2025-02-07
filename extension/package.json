@@ -1,7 +1,7 @@
 {
   "name": "slickdeals-summarizer-extension",
   "displayName": "SlickSummarizer",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Summarizes Slickdeals threads using AI",
   "author": "Faizan Ali",
   "homepage": "https://www.faizanali.com",
